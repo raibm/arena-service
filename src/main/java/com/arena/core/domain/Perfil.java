@@ -9,7 +9,7 @@ public class Perfil {
     private LocalDate creationDate;
     private String avatar;
     private String description;
-    private String favoriteChampion;
+    private String battleStrategy;
     private Double winrate;
     private String title;
 
@@ -61,12 +61,12 @@ public class Perfil {
         this.description = description;
     }
 
-    public String getFavoriteChampion() {
-        return favoriteChampion;
+    public String getBattleStrategy() {
+        return battleStrategy;
     }
 
-    public void setFavoriteChampion(String favoriteChampion) {
-        this.favoriteChampion = favoriteChampion;
+    public void setBattleStrategy(String battleStrategy) {
+        this.battleStrategy = battleStrategy;
     }
 
     public Double getWinrate() {
@@ -94,7 +94,7 @@ public class Perfil {
                 ", creationDate=" + creationDate +
                 ", avatar='" + avatar + '\'' +
                 ", description='" + description + '\'' +
-                ", favoriteChampion='" + favoriteChampion + '\'' +
+                ", battleStrategy='" + battleStrategy + '\'' +
                 ", winrate=" + winrate +
                 ", title='" + title + '\'' +
                 '}';
