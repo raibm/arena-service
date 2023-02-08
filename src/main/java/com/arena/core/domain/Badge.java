@@ -2,6 +2,9 @@ package com.arena.core.domain;
 
 import java.time.LocalDate;
 
+/**
+ * Badge is a simple form to show to who is seeing your character, what achievements the current character got.
+ */
 public class Badge {
     private String name;
     private String description;
