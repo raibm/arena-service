@@ -1,102 +1,11 @@
 package com.arena.core.domain;
 
-import java.time.LocalDate;
+import java.util.List;
 
 public class Perfil {
-    private Integer totalWin;
-    private Integer totalLost;
-    private String nickname;
-    private LocalDate creationDate;
-    private String avatar;
-    private String description;
-    private String battleStrategy;
-    private Double winrate;
-    private String title;
+    private String name;
 
-    public Integer getTotalWin() {
-        return totalWin;
-    }
+    private String email;
 
-    public void setTotalWin(Integer totalWin) {
-        this.totalWin = totalWin;
-    }
-
-    public Integer getTotalLost() {
-        return totalLost;
-    }
-
-    public void setTotalLost(Integer totalLost) {
-        this.totalLost = totalLost;
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public LocalDate getCreationDate() {
-        return creationDate;
-    }
-
-    public void setCreationDate(LocalDate creationDate) {
-        this.creationDate = creationDate;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getBattleStrategy() {
-        return battleStrategy;
-    }
-
-    public void setBattleStrategy(String battleStrategy) {
-        this.battleStrategy = battleStrategy;
-    }
-
-    public Double getWinrate() {
-        return winrate;
-    }
-
-    public void setWinrate(Double winrate) {
-        this.winrate = winrate;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    @Override
-    public String toString() {
-        return "Perfil{" +
-                "totalWin=" + totalWin +
-                ", totalLost=" + totalLost +
-                ", nickname='" + nickname + '\'' +
-                ", creationDate=" + creationDate +
-                ", avatar='" + avatar + '\'' +
-                ", description='" + description + '\'' +
-                ", battleStrategy='" + battleStrategy + '\'' +
-                ", winrate=" + winrate +
-                ", title='" + title + '\'' +
-                '}';
-    }
+    private List<Character> characters;
 }
