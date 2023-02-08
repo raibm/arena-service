@@ -2,7 +2,12 @@ package com.arena.core.domain;
 
 import java.time.LocalDate;
 
+/**
+ * Character is the most important thing in this app. Here we have all information about a player.
+ * We use then to create battles, and give some badges.
+ */
 public class Character {
+    private String id;
     private Integer totalWin;
     private Integer totalLost;
     private String nickname;
@@ -12,6 +17,30 @@ public class Character {
     private BattleTheme battleTheme;
     private Double winrate;
     private String title;
+
+    public Character() {
+    }
+
+    public Character(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleTheme battleTheme, Double winrate, String title) {
+        this.id = id;
+        this.totalWin = totalWin;
+        this.totalLost = totalLost;
+        this.nickname = nickname;
+        this.creationDate = creationDate;
+        this.avatar = avatar;
+        this.description = description;
+        this.battleTheme = battleTheme;
+        this.winrate = winrate;
+        this.title = title;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public Integer getTotalWin() {
         return totalWin;
@@ -83,20 +112,5 @@ public class Character {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    @Override
-    public String toString() {
-        return "Perfil{" +
-                "totalWin=" + totalWin +
-                ", totalLost=" + totalLost +
-                ", nickname='" + nickname + '\'' +
-                ", creationDate=" + creationDate +
-                ", avatar='" + avatar + '\'' +
-                ", description='" + description + '\'' +
-                ", battleTheme='" + battleTheme.getName() + '\'' +
-                ", winrate=" + winrate +
-                ", title='" + title + '\'' +
-                '}';
     }
 }
