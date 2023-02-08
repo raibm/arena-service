@@ -7,15 +7,17 @@ public class Battle {
     private String creationDate;
     private Character winner;
     private List<Character> duelists;
+    private List<BattleRule> battleRules;
 
     public Battle() {
     }
 
-    public Battle(String id, String creationDate, Character winner, List<Character> duelists) {
+    public Battle(String id, String creationDate, Character winner, List<Character> duelists, List<BattleRule> battleRules) {
         this.id = id;
         this.creationDate = creationDate;
         this.winner = winner;
         this.duelists = duelists;
+        this.battleRules = battleRules;
     }
 
     public String getId() {
@@ -48,5 +50,13 @@ public class Battle {
 
     public void setDuelists(List<Character> duelists) {
         this.duelists = duelists;
+    }
+
+    public List<BattleRule> getBattleRules() {
+        return battleRules;
+    }
+
+    public void setBattleRules(List<BattleRule> battleRules) {
+        this.battleRules = battleRules;
     }
 }
