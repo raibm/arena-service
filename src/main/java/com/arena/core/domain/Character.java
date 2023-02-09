@@ -1,6 +1,7 @@
 package com.arena.core.domain;
 
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * Character is the most important thing in this app. Here we have all information about a player.
@@ -18,10 +19,13 @@ public class Character {
     private Double winrate;
     private String title;
 
+    private List<Battle> battles;
+
     public Character() {
     }
 
-    public Character(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleTheme battleTheme, Double winrate, String title) {
+    public Character(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleTheme battleTheme, Double winrate, String title
+    , List<Battle> battles) {
         this.id = id;
         this.totalWin = totalWin;
         this.totalLost = totalLost;
@@ -32,6 +36,7 @@ public class Character {
         this.battleTheme = battleTheme;
         this.winrate = winrate;
         this.title = title;
+        this.battles = battles;
     }
 
     public String getId() {
@@ -112,5 +117,13 @@ public class Character {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public List<Battle> getBattles() {
+        return battles;
+    }
+
+    public void setBattles(List<Battle> battles) {
+        this.battles = battles;
     }
 }
