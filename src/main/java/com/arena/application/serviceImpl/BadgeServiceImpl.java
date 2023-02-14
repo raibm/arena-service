@@ -2,9 +2,10 @@ package com.arena.application.serviceImpl;
 
 import com.arena.core.dto.BadgeDTO;
 import com.arena.core.service.BadgeService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class BadgeServiceImpl implements BadgeService {
     @Override
     public BadgeDTO save(BadgeDTO badgeDTO) {
