@@ -1,4 +1,4 @@
-package com.arena.application.serviceImpl;
+package com.arena.application.implementation;
 
 import com.arena.core.dto.PerfilDTO;
 import com.arena.core.service.PerfilService;
