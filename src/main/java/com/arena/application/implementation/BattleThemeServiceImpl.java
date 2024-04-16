@@ -1,8 +1,10 @@
-package com.arena.application.serviceImpl;
+package com.arena.application.implementation;
 
 import com.arena.core.dto.BattleThemeDTO;
 import com.arena.core.service.BattleThemeService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class BattleThemeServiceImpl implements BattleThemeService {
     @Override
     public BattleThemeDTO save(BattleThemeDTO battleThemeDTO) {

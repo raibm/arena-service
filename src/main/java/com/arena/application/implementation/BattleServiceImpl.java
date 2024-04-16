@@ -1,8 +1,10 @@
-package com.arena.application.serviceImpl;
+package com.arena.application.implementation;
 
 import com.arena.core.dto.BattleDTO;
 import com.arena.core.service.BattleService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class BattleServiceImpl implements BattleService {
     @Override
     public BattleDTO save(BattleDTO battleDTO) {

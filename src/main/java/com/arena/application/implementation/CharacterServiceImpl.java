@@ -1,8 +1,10 @@
-package com.arena.application.serviceImpl;
+package com.arena.application.implementation;
 
 import com.arena.core.dto.CharacterDTO;
 import com.arena.core.service.CharacterService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CharacterServiceImpl implements CharacterService {
     @Override
     public CharacterDTO save(CharacterDTO characterDTO) {
