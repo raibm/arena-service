@@ -15,17 +15,15 @@ public class Character {
     private LocalDate creationDate;
     private String avatar;
     private String description;
-    private BattleTheme battleTheme;
     private Double winrate;
     private String title;
-
     private List<Battle> battles;
     private List<Badge> badges;
 
     public Character() {
     }
 
-    public Character(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleTheme battleTheme, Double winrate, String title
+    public Character(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, Double winrate, String title
             , List<Battle> battles, List<Badge> badges) {
         this.id = id;
         this.totalWin = totalWin;
@@ -34,7 +32,6 @@ public class Character {
         this.creationDate = creationDate;
         this.avatar = avatar;
         this.description = description;
-        this.battleTheme = battleTheme;
         this.winrate = winrate;
         this.title = title;
         this.battles = battles;
@@ -95,14 +92,6 @@ public class Character {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public BattleTheme getBattleTheme() {
-        return this.battleTheme;
-    }
-
-    public void setBattleTheme(BattleTheme battleTheme) {
-        this.battleTheme = battleTheme;
     }
 
     public Double getWinrate() {

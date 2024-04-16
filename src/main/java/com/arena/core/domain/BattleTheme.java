@@ -10,15 +10,17 @@ public class BattleTheme {
     private String id;
     private String name;
     private String description;
+    private BattleTheme battleTheme;
 
     public BattleTheme() {
     }
 
 
-    public BattleTheme(String id, String name, String description) {
+    public BattleTheme(String id, String name, String description, BattleTheme battleTheme) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.battleTheme = battleTheme;
     }
 
     public String getId() {
@@ -43,5 +45,11 @@ public class BattleTheme {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+    public BattleTheme getBattleTheme() {
+        return this.battleTheme;
+    }
+    public void setBattleTheme(BattleTheme battleTheme) {
+        this.battleTheme = battleTheme;
     }
 }
