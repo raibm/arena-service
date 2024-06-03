@@ -1,28 +1,28 @@
 package com.arena.application.implementation;
 
-import com.arena.core.dto.BattleRuleDTO;
+import com.arena.core.dto.BattleRuleDto;
 import com.arena.core.service.BattleRuleService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class BattleRuleServiceImpl implements BattleRuleService {
     @Override
-    public BattleRuleDTO save(BattleRuleDTO battleRuleDTO) {
+    public BattleRuleDto save(BattleRuleDto battleRuleDTO) {
         return null;
     }
 
     @Override
-    public BattleRuleDTO getById(String id) {
+    public BattleRuleDto getById(String id) {
         return null;
     }
 
     @Override
-    public BattleRuleDTO getAll() {
+    public BattleRuleDto getAll() {
         return null;
     }
 
     @Override
-    public BattleRuleDTO delete(String id) {
+    public BattleRuleDto delete(String id) {
         return null;
     }
 }

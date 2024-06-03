@@ -1,14 +1,14 @@
 package com.arena.core.service;
 
-import com.arena.core.dto.BattleRuleDTO;
+import com.arena.core.dto.BattleRuleDto;
 
 public interface BattleRuleService {
 
-    BattleRuleDTO save(BattleRuleDTO battleRuleDTO);
+    BattleRuleDto save(BattleRuleDto battleRuleDTO);
 
-    BattleRuleDTO getById(String id);
+    BattleRuleDto getById(String id);
 
-    BattleRuleDTO getAll();
+    BattleRuleDto getAll();
 
-    BattleRuleDTO delete(String id);
+    BattleRuleDto delete(String id);
 }

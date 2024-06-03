@@ -3,7 +3,7 @@ package com.arena.core.dto;
 import java.time.LocalDate;
 import java.util.List;
 
-public class CharacterDTO {
+public class CharacterDto {
     private String id;
     private Integer totalWin;
     private Integer totalLost;
@@ -11,18 +11,18 @@ public class CharacterDTO {
     private LocalDate creationDate;
     private String avatar;
     private String description;
-    private BattleThemeDTO battleTheme;
+    private BattleThemeDto battleTheme;
     private Double winrate;
     private String title;
 
-    private List<BattleDTO> battles;
-    private List<BadgeDTO> badges;
+    private List<BattleDto> battles;
+    private List<BadgeDto> badges;
 
-    public CharacterDTO() {
+    public CharacterDto() {
     }
 
-    public CharacterDTO(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleThemeDTO battleTheme, Double winrate, String title
-            , List<BattleDTO> battles, List<BadgeDTO> badges) {
+    public CharacterDto(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleThemeDto battleTheme, Double winrate, String title
+            , List<BattleDto> battles, List<BadgeDto> badges) {
         this.id = id;
         this.totalWin = totalWin;
         this.totalLost = totalLost;
@@ -93,11 +93,11 @@ public class CharacterDTO {
         this.description = description;
     }
 
-    public BattleThemeDTO getBattleTheme() {
+    public BattleThemeDto getBattleTheme() {
         return this.battleTheme;
     }
 
-    public void setBattleTheme(BattleThemeDTO battleTheme) {
+    public void setBattleTheme(BattleThemeDto battleTheme) {
         this.battleTheme = battleTheme;
     }
 
@@ -117,19 +117,19 @@ public class CharacterDTO {
         this.title = title;
     }
 
-    public List<BattleDTO> getBattles() {
+    public List<BattleDto> getBattles() {
         return battles;
     }
 
-    public void setBattles(List<BattleDTO> battles) {
+    public void setBattles(List<BattleDto> battles) {
         this.battles = battles;
     }
 
-    public List<BadgeDTO> getBadges() {
+    public List<BadgeDto> getBadges() {
         return badges;
     }
 
-    public void setBadges(List<BadgeDTO> badges) {
+    public void setBadges(List<BadgeDto> badges) {
         this.badges = badges;
     }
 }

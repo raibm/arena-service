@@ -1,16 +1,17 @@
 package com.arena.core.dto;
 
-public class BattleRuleDTO {
+public class BattleThemeDto {
     private String id;
-    private String title;
+    private String name;
     private String description;
 
-    public BattleRuleDTO() {
+    public BattleThemeDto() {
     }
 
-    public BattleRuleDTO(String id, String title, String description) {
+
+    public BattleThemeDto(String id, String name, String description) {
         this.id = id;
-        this.title = title;
+        this.name = name;
         this.description = description;
     }
 
@@ -22,12 +23,12 @@ public class BattleRuleDTO {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {

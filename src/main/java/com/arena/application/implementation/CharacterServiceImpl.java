@@ -1,28 +1,28 @@
 package com.arena.application.implementation;
 
-import com.arena.core.dto.CharacterDTO;
+import com.arena.core.dto.CharacterDto;
 import com.arena.core.service.CharacterService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CharacterServiceImpl implements CharacterService {
     @Override
-    public CharacterDTO save(CharacterDTO characterDTO) {
+    public CharacterDto save(CharacterDto characterDTO) {
         return null;
     }
 
     @Override
-    public CharacterDTO getById(String id) {
+    public CharacterDto getById(String id) {
         return null;
     }
 
     @Override
-    public CharacterDTO getAll() {
+    public CharacterDto getAll() {
         return null;
     }
 
     @Override
-    public CharacterDTO delete(String id) {
+    public CharacterDto delete(String id) {
         return null;
     }
 }

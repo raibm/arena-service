@@ -1,14 +1,14 @@
 package com.arena.core.service;
 
-import com.arena.core.dto.BattleThemeDTO;
+import com.arena.core.dto.BattleThemeDto;
 
 public interface BattleThemeService {
 
-    BattleThemeDTO save(BattleThemeDTO battleThemeDTO);
+    BattleThemeDto save(BattleThemeDto battleThemeDTO);
 
-    BattleThemeDTO getById(String id);
+    BattleThemeDto getById(String id);
 
-    BattleThemeDTO getAll();
+    BattleThemeDto getAll();
 
-    BattleThemeDTO delete(String id);
+    BattleThemeDto delete(String id);
 }

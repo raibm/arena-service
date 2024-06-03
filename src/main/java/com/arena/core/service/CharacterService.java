@@ -1,14 +1,14 @@
 package com.arena.core.service;
 
-import com.arena.core.dto.CharacterDTO;
+import com.arena.core.dto.CharacterDto;
 
 public interface CharacterService {
 
-    CharacterDTO save(CharacterDTO characterDTO);
+    CharacterDto save(CharacterDto characterDTO);
 
-    CharacterDTO getById(String id);
+    CharacterDto getById(String id);
 
-    CharacterDTO getAll();
+    CharacterDto getAll();
 
-    CharacterDTO delete(String id);
+    CharacterDto delete(String id);
 }

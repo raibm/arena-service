@@ -1,16 +1,16 @@
 package com.arena.core.service;
 
-import com.arena.core.dto.BadgeDTO;
+import com.arena.core.dto.BadgeDto;
 
 import java.util.List;
 
 public interface BadgeService {
 
-    BadgeDTO save(BadgeDTO badgeDTO);
+    BadgeDto save(BadgeDto badgeDTO);
 
-    BadgeDTO getById(String id);
+    BadgeDto getById(String id);
 
-    List<BadgeDTO> getAll();
+    List<BadgeDto> getAll();
 
-    BadgeDTO delete(String id);
+    BadgeDto delete(String id);
 }

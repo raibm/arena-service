@@ -2,17 +2,17 @@ package com.arena.core.dto;
 
 import java.util.List;
 
-public class BattleDTO {
+public class BattleDto {
     private String id;
     private String creationDate;
-    private CharacterDTO winner;
-    private List<CharacterDTO> duelists;
-    private List<BattleRuleDTO> battleRules;
+    private CharacterDto winner;
+    private List<CharacterDto> duelists;
+    private List<BattleRuleDto> battleRules;
 
-    public BattleDTO() {
+    public BattleDto() {
     }
 
-    public BattleDTO(String id, String creationDate, CharacterDTO winner, List<CharacterDTO> duelists, List<BattleRuleDTO> battleRules) {
+    public BattleDto(String id, String creationDate, CharacterDto winner, List<CharacterDto> duelists, List<BattleRuleDto> battleRules) {
         this.id = id;
         this.creationDate = creationDate;
         this.winner = winner;
@@ -36,27 +36,27 @@ public class BattleDTO {
         this.creationDate = creationDate;
     }
 
-    public CharacterDTO getWinner() {
+    public CharacterDto getWinner() {
         return winner;
     }
 
-    public void setWinner(CharacterDTO winner) {
+    public void setWinner(CharacterDto winner) {
         this.winner = winner;
     }
 
-    public List<CharacterDTO> getDuelists() {
+    public List<CharacterDto> getDuelists() {
         return duelists;
     }
 
-    public void setDuelists(List<CharacterDTO> duelists) {
+    public void setDuelists(List<CharacterDto> duelists) {
         this.duelists = duelists;
     }
 
-    public List<BattleRuleDTO> getBattleRules() {
+    public List<BattleRuleDto> getBattleRules() {
         return battleRules;
     }
 
-    public void setBattleRules(List<BattleRuleDTO> battleRules) {
+    public void setBattleRules(List<BattleRuleDto> battleRules) {
         this.battleRules = battleRules;
     }
 }

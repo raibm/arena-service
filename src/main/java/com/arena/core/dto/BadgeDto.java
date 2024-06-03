@@ -2,17 +2,17 @@ package com.arena.core.dto;
 
 import java.time.LocalDate;
 
-public class BadgeDTO {
+public class BadgeDto {
     private String id;
     private String name;
     private String description;
     private String icon;
     private LocalDate creationDate;
 
-    public BadgeDTO() {
+    public BadgeDto() {
     }
 
-    public BadgeDTO(String id, String name, String description, String icon, LocalDate creationDate) {
+    public BadgeDto(String id, String name, String description, String icon, LocalDate creationDate) {
         this.id = id;
         this.name = name;
         this.description = description;
