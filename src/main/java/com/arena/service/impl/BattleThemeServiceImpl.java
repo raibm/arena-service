@@ -1,7 +1,7 @@
-package com.arena.application.implementation;
+package com.arena.service.impl;
 
-import com.arena.core.dto.BattleThemeDTO;
-import com.arena.core.service.BattleThemeService;
+import com.arena.dto.BattleThemeDTO;
+import com.arena.service.BattleThemeService;
 import org.springframework.stereotype.Service;
 
 @Service

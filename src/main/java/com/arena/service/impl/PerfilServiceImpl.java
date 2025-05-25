@@ -1,7 +1,7 @@
-package com.arena.application.implementation;
+package com.arena.service.impl;
 
-import com.arena.core.dto.PerfilDTO;
-import com.arena.core.service.PerfilService;
+import com.arena.dto.PerfilDTO;
+import com.arena.service.PerfilService;
 import org.springframework.stereotype.Service;
 
 @Service

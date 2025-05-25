@@ -1,7 +1,7 @@
-package com.arena.application.implementation;
+package com.arena.service.impl;
 
-import com.arena.core.dto.CharacterDTO;
-import com.arena.core.service.CharacterService;
+import com.arena.dto.CharacterDTO;
+import com.arena.service.CharacterService;
 import org.springframework.stereotype.Service;
 
 @Service

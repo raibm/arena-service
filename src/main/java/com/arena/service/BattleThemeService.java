@@ -1,6 +1,6 @@
-package com.arena.core.service;
+package com.arena.service;
 
-import com.arena.core.dto.BattleThemeDTO;
+import com.arena.dto.BattleThemeDTO;
 
 public interface BattleThemeService {
 

@@ -1,6 +1,6 @@
-package com.arena.core.service;
+package com.arena.service;
 
-import com.arena.core.dto.BattleDTO;
+import com.arena.dto.BattleDTO;
 
 public interface BattleService {
 

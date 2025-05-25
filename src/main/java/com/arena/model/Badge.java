@@ -1,4 +1,4 @@
-package com.arena.core.domain;
+package com.arena.model;
 
 import java.time.LocalDate;
 

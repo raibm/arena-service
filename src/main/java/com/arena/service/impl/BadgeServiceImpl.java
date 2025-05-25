@@ -1,7 +1,7 @@
-package com.arena.application.implementation;
+package com.arena.service.impl;
 
-import com.arena.core.dto.BadgeDTO;
-import com.arena.core.service.BadgeService;
+import com.arena.dto.BadgeDTO;
+import com.arena.service.BadgeService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

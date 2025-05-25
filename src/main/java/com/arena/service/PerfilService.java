@@ -1,6 +1,6 @@
-package com.arena.core.service;
+package com.arena.service;
 
-import com.arena.core.dto.PerfilDTO;
+import com.arena.dto.PerfilDTO;
 
 public interface PerfilService {
 

@@ -1,4 +1,4 @@
-package com.arena.core.domain;
+package com.arena.model;
 
 /**
  * BattleTheme is a class accountable for represent all battle themes.Think about Battle Themes

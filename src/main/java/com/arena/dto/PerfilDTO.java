@@ -1,17 +1,17 @@
-package com.arena.core.domain;
+package com.arena.dto;
 
 import java.util.List;
 
-public class Perfil {
+public class PerfilDTO {
     private String id;
     private String name;
     private String email;
-    private List<Character> characters;
+    private List<CharacterDTO> characters;
 
-    public Perfil() {
+    public PerfilDTO() {
     }
 
-    public Perfil(String id, String name, String email, List<Character> characters) {
+    public PerfilDTO(String id, String name, String email, List<CharacterDTO> characters) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -42,11 +42,11 @@ public class Perfil {
         this.email = email;
     }
 
-    public List<Character> getCharacters() {
+    public List<CharacterDTO> getCharacters() {
         return characters;
     }
 
-    public void setCharacters(List<Character> characters) {
+    public void setCharacters(List<CharacterDTO> characters) {
         this.characters = characters;
     }
 }

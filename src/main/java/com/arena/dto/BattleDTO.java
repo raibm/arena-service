@@ -1,4 +1,4 @@
-package com.arena.core.dto;
+package com.arena.dto;
 
 import java.util.List;
 

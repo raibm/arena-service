@@ -1,6 +1,6 @@
-package com.arena.core.service;
+package com.arena.service;
 
-import com.arena.core.dto.BadgeDTO;
+import com.arena.dto.BadgeDTO;
 
 import java.util.List;
 

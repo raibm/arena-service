@@ -1,7 +1,7 @@
-package com.arena.application.implementation;
+package com.arena.service.impl;
 
-import com.arena.core.dto.BattleRuleDTO;
-import com.arena.core.service.BattleRuleService;
+import com.arena.dto.BattleRuleDTO;
+import com.arena.service.BattleRuleService;
 import org.springframework.stereotype.Service;
 
 @Service

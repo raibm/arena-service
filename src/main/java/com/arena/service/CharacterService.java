@@ -1,6 +1,6 @@
-package com.arena.core.service;
+package com.arena.service;
 
-import com.arena.core.dto.CharacterDTO;
+import com.arena.dto.CharacterDTO;
 
 public interface CharacterService {
 

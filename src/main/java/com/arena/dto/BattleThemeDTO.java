@@ -1,19 +1,17 @@
-package com.arena.core.domain;
+package com.arena.dto;
 
-/**
- * BattleRule is used to control all rules used in a specif battle.
- */
-public class BattleRule {
+public class BattleThemeDTO {
     private String id;
-    private String title;
+    private String name;
     private String description;
 
-    public BattleRule() {
+    public BattleThemeDTO() {
     }
 
-    public BattleRule(String id, String title, String description) {
+
+    public BattleThemeDTO(String id, String name, String description) {
         this.id = id;
-        this.title = title;
+        this.name = name;
         this.description = description;
     }
 
@@ -25,12 +23,12 @@ public class BattleRule {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {

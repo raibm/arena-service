@@ -1,13 +1,9 @@
-package com.arena.core.domain;
+package com.arena.dto;
 
 import java.time.LocalDate;
 import java.util.List;
 
-/**
- * Character is the most important thing in this app. Here we have all information about a player.
- * We use then to create battles, and give some badges.
- */
-public class Character {
+public class CharacterDTO {
     private String id;
     private Integer totalWin;
     private Integer totalLost;
@@ -15,16 +11,18 @@ public class Character {
     private LocalDate creationDate;
     private String avatar;
     private String description;
+    private BattleThemeDTO battleTheme;
     private Double winrate;
     private String title;
-    private List<Battle> battles;
-    private List<Badge> badges;
 
-    public Character() {
+    private List<BattleDTO> battles;
+    private List<BadgeDTO> badges;
+
+    public CharacterDTO() {
     }
 
-    public Character(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, Double winrate, String title
-            , List<Battle> battles, List<Badge> badges) {
+    public CharacterDTO(String id, Integer totalWin, Integer totalLost, String nickname, LocalDate creationDate, String avatar, String description, BattleThemeDTO battleTheme, Double winrate, String title
+            , List<BattleDTO> battles, List<BadgeDTO> badges) {
         this.id = id;
         this.totalWin = totalWin;
         this.totalLost = totalLost;
@@ -32,6 +30,7 @@ public class Character {
         this.creationDate = creationDate;
         this.avatar = avatar;
         this.description = description;
+        this.battleTheme = battleTheme;
         this.winrate = winrate;
         this.title = title;
         this.battles = battles;
@@ -94,6 +93,14 @@ public class Character {
         this.description = description;
     }
 
+    public BattleThemeDTO getBattleTheme() {
+        return this.battleTheme;
+    }
+
+    public void setBattleTheme(BattleThemeDTO battleTheme) {
+        this.battleTheme = battleTheme;
+    }
+
     public Double getWinrate() {
         return winrate;
     }
@@ -110,19 +117,19 @@ public class Character {
         this.title = title;
     }
 
-    public List<Battle> getBattles() {
+    public List<BattleDTO> getBattles() {
         return battles;
     }
 
-    public void setBattles(List<Battle> battles) {
+    public void setBattles(List<BattleDTO> battles) {
         this.battles = battles;
     }
 
-    public List<Badge> getBadges() {
+    public List<BadgeDTO> getBadges() {
         return badges;
     }
 
-    public void setBadges(List<Badge> badges) {
+    public void setBadges(List<BadgeDTO> badges) {
         this.badges = badges;
     }
 }
